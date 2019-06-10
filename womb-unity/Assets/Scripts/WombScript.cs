@@ -6,19 +6,19 @@ using UnityEngine.UI;
 public class WombScript : MonoBehaviour {
 
     [SerializeField] string _weightFileName;
-    [SerializeField] Texture DefaultTexture;
-    [SerializeField] UnityEngine.UI.RawImage SourceUI;
+    [SerializeField] RenderTexture InputTexture;
+    [SerializeField] RenderTexture ResultTexture;
+    [SerializeField] UnityEngine.UI.RawImage InputUI;
     [SerializeField] UnityEngine.UI.RawImage ResultUI;
 
-    RenderTexture InputTexture;
-    RenderTexture ResultTexture;
+    //RenderTexture ResultTexture;
 
     #region Pix2Pix implementation
 
     Dictionary<string, Pix2Pix.Tensor> _weightTable;
     Pix2Pix.Generator _generator;
 
-    float _budget = 100;
+    float _budget = 50;
     float _budgetAdjust = 10;
 
     readonly string[] _performanceLabels = {
@@ -77,15 +77,24 @@ public class WombScript : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        ResultTexture = new RenderTexture(256, 256, 0);
+        //ResultTexture = new RenderTexture(256, 256, 0);
         ResultTexture.enableRandomWrite = true;
         ResultTexture.Create();
+
+        InputUI.texture = InputTexture;
+        ResultUI.texture = ResultTexture;
+
+        InitializePix2Pix();
     }
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        UpdatePix2Pix();
+    }
+
+    void OnDestroy() {
+        FinalizePix2Pix();
+    }
 
     #endregion
 

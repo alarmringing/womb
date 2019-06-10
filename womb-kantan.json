@@ -1,0 +1,85 @@
+{
+    "shapeDef": {
+        "0": {
+            "layer": 0.0,
+            "parameters": {
+                "Custompivotx": 0.0,
+                "Custompivoty": 0.0,
+                "Custompivotz": 0.0,
+                "Name": "Group",
+                "Pivot": "0",
+                "Type": "Layer"
+            },
+            "path": "/kantanMapper/project/allShapes/item0",
+            "type": "0"
+        },
+        "1": {
+            "layer": -1.0,
+            "parameters": {
+                "Anisotropic": "off",
+                "Bias": 0.0,
+                "Colora": 1.0,
+                "Colorb": 0.25,
+                "Colorg": 0.420418,
+                "Colorr": 0.0,
+                "Cols": 3,
+                "Custompivotuvx": 26.0,
+                "Custompivotuvy": 1.0,
+                "Custompivotuvz": 0.0,
+                "Custompivotx": -556.0,
+                "Custompivoty": -561.0,
+                "Custompivotz": 0.0,
+                "Enablesoftedge": false,
+                "Extendu": "zero",
+                "Extendv": "zero",
+                "Filter": "mipmaplinear",
+                "Fliptexture": false,
+                "Handlelock": true,
+                "Linearize": 0.0,
+                "Mapping": "perspective",
+                "Name": "Rectangle",
+                "Pivot": "4",
+                "Pivotuv": "4",
+                "Rolloff": "halfCos",
+                "Rows": 3,
+                "Showtexture": false,
+                "Softedge": 0.6,
+                "Steepness": 1.0,
+                "Texture": "",
+                "Textureorientation": "0",
+                "Type": "Rectangle",
+                "Uvmatrix": "tdu.Matrix([1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, -0.0015625000232830644, 0.0, 0.0, 1.0])",
+                "Warp": "bezier"
+            },
+            "path": "/kantanMapper/project/allShapes/item1",
+            "shapeDef": {
+                "keyOffset": "id\tu\tv\r\n0\t-0.35820895433425903\t-0.3563636243343353\r\n1\t-0.0746268667280674\t-0.34636365063488483\r\n2\t-0.5373134613037109\t-0.040909092873334885\r\n3\t0.031343284994363785\t-0.037272728979587555\r\n",
+                "pointOffset": "index\tP_0_\tP_1_\tP_2_\r\n",
+                "uvOffset": "\r\n",
+                "uvOffsetTexture": "index\tu\tv\r\n0\t0\t0\r\n1\t0\t0\r\n2\t0\t0\r\n3\t0\t0\r\n"
+            },
+            "shapeXform": "tdu.Matrix([670.0, 0.0, 0.0, 0.0, 0.0, 1100.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, -556.0, -561.0, 0.0, 1.0])",
+            "type": "1"
+        }
+    },
+    "shapes": [
+        {
+            "sId": "0",
+            "sLayer": "0",
+            "sLock": "0",
+            "sOwner": "-1",
+            "sPath": "/kantanMapper/project/allShapes/item0",
+            "sType": "0",
+            "sVisible": "1"
+        },
+        {
+            "sId": "1",
+            "sLayer": "1",
+            "sLock": "0",
+            "sOwner": "-1",
+            "sPath": "/kantanMapper/project/allShapes/item1",
+            "sType": "1",
+            "sVisible": "1"
+        }
+    ]
+}
